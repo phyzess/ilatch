@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "rangeStrategy": "pin",
+  "packageRules": [
+    {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["@phyzess/latch"],
+      "groupName": "Latch runtime",
+      "rangeStrategy": "pin"
+    },
+    {
+      "matchManagers": ["npm"],
+      "excludePackageNames": ["@phyzess/latch"],
+      "enabled": false
+    }
+  ]
+}
